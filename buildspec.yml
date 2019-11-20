@@ -3,14 +3,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk8
+      java: corretto11
   post_build:
     commands:
       - mvn package
-      
-
+      - mv target/bt.war bt.war
 artifacts:
   files:
-    - target/bt.war
-    
-  base-directory: 'target/bt'
+    - bt.war
+    - .ebextensions/**/*
