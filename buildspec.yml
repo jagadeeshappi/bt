@@ -7,10 +7,10 @@ phases:
   post_build:
     commands:
       - mvn package
-      - mv target/bt.war bt.war
+      
 
 artifacts:
   files:
-    - bt.war
+    - target/bt.war
     
   base-directory: 'target/bt'
