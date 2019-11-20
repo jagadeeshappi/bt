@@ -10,6 +10,6 @@ phases:
       - mv target/bt.war bt.war
 artifacts:
   files:
-    - my-web-app.war
+    - bt.war
     - .ebextensions/**/*
   base-directory: 'target/bt.war'
